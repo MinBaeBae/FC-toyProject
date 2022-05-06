@@ -11,12 +11,19 @@ header .user {
   align-items: center;
 }
 
-header .user>ul {
-  display: flex;
-
+header .user>h3 {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-header .user>ul>li {
-  padding: 5px;
-  justify-content: center;
+header .user__logo {
+  padding-left: 27px;
+}
+
+header .user .utility {
+  display: flex;
+  width: 66px;
+  justify-content: space-between;
+  margin-right: 27px;
+  padding-top: 10px;
 }

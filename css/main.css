@@ -1,11 +1,17 @@
+body {
+  background-color: #ddd;
+}
+
 .wrap {
   background-color: #EEEBE5;
   font-family: 'Noto Sans KR',
     'Roboto Flex';
   max-width: 375px;
   max-height: 680px;
-  height: 680px;
-  margin-left: 200px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 img {
@@ -19,6 +25,10 @@ a {
   letter-spacing: -0.24px;
   font-weight: 500;
   color: #333;
+}
+
+.account__status {
+  margin-bottom: 21px;
 }
 
 .account__status .account__info {
@@ -61,10 +71,89 @@ a {
 
 .account__status .account__info .account__duedate {
   margin: 2px;
+  color: #858585;
 }
 
 .account__status .account__getrich {
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
+  color: #000;
 
+}
+
+.account__history {
+  background-color: #fff;
+  box-shadow: 0px -5px 14px rgba(189, 144, 28, 0.08);
+  border-radius: 30px 30px 0px 0px;
+}
+
+.account__history .save__list {
+  width: 308px;
+  margin: 0px auto 25px;
+  padding-top: 25px;
+  overflow: hidden;
+}
+
+
+.account__history .save__list ul {
+  overflow: hidden;
+  width: 200%;
+
+}
+
+.account__history .save__list ul li {
+  background-color: #ccc;
+  margin-right: 18px;
+  float: left;
+  width: 162px;
+  height: 47px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.account__history .save__list ul li div {
+  background-color: #FF5F00;
+  height: 100%;
+  width: 70%;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.account__history .save__list ul li:nth-child(2) div {
+  background-color: #FEB700;
+}
+
+.account__history .save__list ul li div p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 18px;
+
+}
+
+.account__history .save__list ul li div p.save__title {}
+
+.account__history .save__list ul li div p.save__money {}
+
+.account__history .recent__list {
+  width: 308px;
+  height: auto;
+  margin: 0px auto;
+  color: #858585;
+
+}
+
+.account__history .recent__list>li {
+  box-sizing: border-box;
+  border-bottom: 1px solid #858585;
+  padding: 5px;
+}
+
+.account__history .recent__list>li:last-child {
+  border-bottom: none;
+}
+
+.account__history .recent__list__title {
+  font-weight: 700;
+  size: 14px;
+  color: #333;
 }
