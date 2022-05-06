@@ -1,11 +1,9 @@
 header {
   width: 100%;
-  position: relative;
+  margin-bottom: 33px;
 }
 
-header .inner {
-  position: absolute;
-  background-color: #EEEBE5;
+header .user {
   width: 100%;
   top: 0px;
   display: flex;
@@ -13,11 +11,12 @@ header .inner {
   align-items: center;
 }
 
-header .inner>ul {
+header .user>ul {
   display: flex;
 
 }
 
-header .inner>ul>li {
+header .user>ul>li {
   padding: 5px;
+  justify-content: center;
 }

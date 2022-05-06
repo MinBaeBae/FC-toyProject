@@ -1,10 +1,11 @@
 .wrap {
-  color: #333;
   background-color: #EEEBE5;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR',
+    'Roboto Flex';
   max-width: 375px;
   max-height: 680px;
-  position: relative;
+  height: 680px;
+  margin-left: 200px;
 }
 
 img {
@@ -13,26 +14,57 @@ img {
 
 a {
   text-decoration: none;
+  font-size: 14px;
+  line-height: 20.72px;
+  letter-spacing: -0.24px;
+  font-weight: 500;
+  color: #333;
 }
 
-.account_status {
-  position: absolute;
+.account__status .account__info {
   width: 279px;
-  height: 155px;
   background: #FFFFFF;
   box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);
   border-radius: 12px;
-
-}
-
-.account_status .account_info {
-  position: aboslute;
-  width: 100%;
-  height: auto;
-
-}
-
-.account_status .account_info>li {
+  z-index: 1;
+  padding: 14px 0 6px;
+  margin: 0 auto 21px;
   display: block;
-  justify-content: center;
+  text-align: center;
+
+
+}
+
+.account__status .account__info>li {
+  margin-bottom: 16px;
+}
+
+.account__status .account__info>li>strong {
+  color: #858585;
+}
+
+.account__status .account__info .account__transfer {
+  margin: auto -65px auto 27.49px;
+
+}
+
+.account__status .account__info .account__balance {
+  font-size: 24px;
+  line-height: 35.52px;
+}
+
+
+
+.account__status .account__info .account__bar {
+  margin-bottom: 8px;
+}
+
+.account__status .account__info .account__duedate {
+  margin: 2px;
+}
+
+.account__status .account__getrich {
+  text-align: center;
+  font-weight: 600;
+
 }
