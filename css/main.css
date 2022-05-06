@@ -66,7 +66,44 @@ a {
 
 
 .account__status .account__info .account__bar {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 8px;
+}
+
+.account__status .account__info .account__bar .account__bar__grey {
+  background-color: #ccc;
+  float: left;
+  margin: auto 30px;
+  width: 202px;
+  height: 6px;
+  border-radius: 6px;
+
+}
+
+
+
+.account__status .account__info .account__bar .account__bar__yellow {
+  background-color: #FFDB4C;
+  border-radius: 6px 0 0 6px;
+  height: 100%;
+  width: 70%;
+  position: relative;
+}
+
+.account__status .account__info .account__bar .account__bar__yellow>input {
+  position: absolute;
+  top: -50%;
+  transform: translateY(-25%);
+  right: 0;
+  width: 8px;
+
+
+}
+
+
+.account__status .account__info .account__bar .account__bar__icon {
+  margin-right: 14px;
 }
 
 .account__status .account__info .account__duedate {
@@ -76,9 +113,11 @@ a {
 
 .account__status .account__getrich {
   text-align: center;
-  font-weight: 700;
   color: #000;
+}
 
+.account__status .account__getrich>a {
+  font-weight: 600;
 }
 
 .account__history {
