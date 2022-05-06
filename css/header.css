@@ -1,3 +1,5 @@
+/* USER HEADER */
+
 header {
   width: 100%;
   margin-bottom: 33px;
@@ -8,7 +10,7 @@ header .user {
   top: 0px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center
 }
 
 header .user>h3 {
@@ -25,5 +27,7 @@ header .user .utility {
   width: 66px;
   justify-content: space-between;
   margin-right: 27px;
-  padding-top: 10px;
 }
+
+
+/* MONEY RELATED HEADER */
