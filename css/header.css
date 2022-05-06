@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  position: relative;
+}
+
+header .inner {
+  position: absolute;
+  background-color: #EEEBE5;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .inner>ul {
+  display: flex;
+
+}
+
+header .inner>ul>li {
+  padding: 5px;
+}
