@@ -1,5 +1,6 @@
 .management__standard {
   margin-bottom: 59px;
+
 }
 
 
@@ -72,7 +73,8 @@
 .expanse__pattern {
   margin-left: 26px;
   height: 100%;
-  
+  margin-bottom: auto;
+
 
 
 }
@@ -82,5 +84,5 @@
 }
 
 .expanse__pattern .expanse__pattern__circle {
-  
+  height: 100%;
 }

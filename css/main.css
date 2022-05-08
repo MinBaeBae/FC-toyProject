@@ -22,7 +22,7 @@ body {
   max-height: 812px;
   height: 100%;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 
