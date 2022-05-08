@@ -7,14 +7,26 @@ body {
   font-family: 'Noto Sans KR',
     'Roboto Flex';
   max-width: 375px;
-  max-height: 680px;
+  max-height: 812px;
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
-img {
+.wrap--white {
+  background-color: #fff;
+  font-family: 'Noto Sans KR',
+    'Roboto Flex';
+  max-width: 375px;
+  max-height: 812px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrap img {
   display: block;
 }
 
@@ -169,9 +181,9 @@ a {
 
 }
 
-.account__history .save__list ul li div p.save__title {}
+/* .account__history .save__list ul li div p.save__title {}
 
-.account__history .save__list ul li div p.save__money {}
+.account__history .save__list ul li div p.save__money {} */
 
 .account__history .recent__list {
   width: 308px;

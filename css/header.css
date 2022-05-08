@@ -13,7 +13,7 @@ header .user {
   align-items: center
 }
 
-header .user>h3 {
+h3 {
   font-size: 18px;
   font-weight: 600;
 }
@@ -31,3 +31,12 @@ header .user .utility {
 
 
 /* MONEY RELATED HEADER */
+header .close__tab {
+  display: flex;
+  justify-content: end;
+  padding-right: 15px;
+}
+
+header .expanse {
+  padding-left: 15px;
+}
