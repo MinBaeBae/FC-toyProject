@@ -194,6 +194,8 @@ a {
 }
 
 .account__history .recent__list>li {
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   border-bottom: 1px solid #858585;
   padding: 5px;
@@ -203,8 +205,9 @@ a {
   border-bottom: none;
 }
 
-.account__history .recent__list__title {
+.account__history .recent__list__date {
   font-weight: 700;
   size: 14px;
   color: #333;
+  line-height: 24px;
 }
