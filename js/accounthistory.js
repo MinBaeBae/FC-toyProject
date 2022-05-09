@@ -10,13 +10,11 @@ fetch("../reference/bank.json").then(function(response){
 })
 .then(function(obj){
 const today = (obj.bankList.filter(e=>e.date === "2021-09-01"))
-console.log(today)
 
+let expanseChart = [];
 for (let i = 0; i < today.length; i++){
-     today[i].history 
-     today[i].price
+     expanseChart += today[i].history + today[i].price;
 }
-
 
 
 
