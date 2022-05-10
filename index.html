@@ -19,12 +19,12 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/nav.css">
-  
+
 
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+  <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -75,7 +75,13 @@
 
     <!-- ACCOUNT HISTORY -->
     <section>
-      <div class="account__history">
+      <div class="account__history" data-value="bottom">
+        <div class="scroll">
+          <button id="scrollTarget">
+            <hr>
+          </button>
+        </div>
+
         <div class="save__list">
           <ul>
             <li>
@@ -92,8 +98,13 @@
             </li>
           </ul>
         </div>
-        <ul class="recent__list">
-          <li class="recent__list__title">오늘 <p class="recent__list__amount"></p>
+        <ul class="recent">
+          <div class="recent__list__title recent__list__today">오늘</div>
+          <div class="recent__list__title recent__list__yesterday">어제</div>
+          <div class="recent__list__title recent__list__before">이전</div>
+
+
+          <!-- <li class="recent__list__title">오늘 <p class="recent__list__amount"></p>
           </li>
           <li class="recent__list__description">미스터피자 <p class="recent__list__amount"></p>
           </li>
@@ -118,7 +129,7 @@
           <li class="recent__list__description">쿠팡 <p class="recent__list__amount"></p>
           </li>
           <li class="recent__list__description">미스터피자 <p class="recent__list__amount"></p>
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
@@ -133,6 +144,7 @@
       </ul>
     </nav>
   </div>
+  <script src="./js/drag.js"></script>
 </body>
 
 </html>

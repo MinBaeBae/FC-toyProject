@@ -1,8 +1,23 @@
+.expanse h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  padding-left: 29px;
+
+}
+
 .management__standard {
   margin-bottom: 59px;
 
 }
 
+.management__standard strong {
+  font-size: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.24px;
+}
 
 .management__standard .setting {
   display: flex;
@@ -71,11 +86,7 @@
 }
 
 .expanse__pattern {
-  margin-left: 26px;
-  height: 100%;
-  margin-bottom: auto;
-
-
+  margin: 46px auto 0 30px;
 
 }
 
@@ -84,5 +95,6 @@
 }
 
 .expanse__pattern .expanse__pattern__circle {
-  height: 100%;
+  /* height: fit-content; */
+  margin-top: 18px;
 }

@@ -2,13 +2,17 @@ body {
   background-color: #ddd;
 }
 
+button {
+  cursor: pointer;
+}
+
 .wrap {
   background-color: #EEEBE5;
   font-family: 'Noto Sans KR',
     'Roboto Flex';
   max-width: 375px;
+  height: 100vh;
   max-height: 812px;
-  height: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -19,10 +23,10 @@ body {
   font-family: 'Noto Sans KR',
     'Roboto Flex';
   max-width: 375px;
+  height: 85vh;
   max-height: 812px;
-  height: 100%;
   margin: 0 auto;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 
@@ -136,6 +140,38 @@ a {
   background-color: #fff;
   box-shadow: 0px -5px 14px rgba(189, 144, 28, 0.08);
   border-radius: 30px 30px 0px 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+.account__history[data-value=bottom] {
+  top: 353px;
+}
+
+.account__history[data-value=top] {
+  top: 99px;
+}
+
+.account__history .scroll {
+  display: flex;
+  justify-content: center;
+  z-index: 15;
+  position: relative;
+}
+
+.account__history .scroll button {
+  border: none;
+  background-color: inherit;
+  padding: 5px 0px;
+}
+
+.account__history .scroll button hr {
+  height: 2.15px;
+  width: 100px;
+  border: none;
+  background-color: #c4c4c4;
 }
 
 .account__history .save__list {
@@ -185,26 +221,39 @@ a {
 
 .account__history .save__list ul li div p.save__money {} */
 
-.account__history .recent__list {
+.account__history .recent {
   width: 308px;
   height: auto;
   margin: 0px auto;
-  color: #858585;
 
 }
 
-.account__history .recent__list>li {
-  box-sizing: border-box;
-  border-bottom: 1px solid #858585;
+.account__history .recent .recent__list__title {
   padding: 5px;
-}
-
-.account__history .recent__list>li:last-child {
-  border-bottom: none;
-}
-
-.account__history .recent__list__title {
   font-weight: 700;
   size: 14px;
   color: #333;
+  margin-top: 10px;
 }
+
+.account__history .recent .recent__list .container {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  line-height: 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #DCDCDC;
+  margin: 8px 0px;
+  color: #444444;
+}
+
+.account__history .recent .recent__list__description {
+  font-size: 18px;
+
+}
+
+.account__history .recent .recent__list .container :last-child {
+  border-bottom: none;
+}
+
+.account__history .recent__list__title {}
