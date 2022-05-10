@@ -12,8 +12,8 @@ button {
   font-family: 'Noto Sans KR',
     'Roboto Flex';
   max-width: 375px;
-  height: 100vh;
   max-height: 812px;
+  height: 100vh;
   margin: 0 auto;
   overflow: hidden;
   position: relative;

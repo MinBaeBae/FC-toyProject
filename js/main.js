@@ -20,7 +20,7 @@ fetch("../reference/bank.json").then(function (response) {
     for (let i = 0; i < today.length; i++) {
       todayHistory += `<li class="container">
       <p class="recent__list__description"> ${today[i].history}</p>
-      <p class="recent__list__amount ${today[i].income == "in" ? "red" : ""}"> ${today[i].income == "in" ? "+" : ""} ${today[i].price}</p></li>
+      <p class="recent__list__amount ${today[i].income == "in" ? "red" : ""}"> ${today[i].income == "in" ? "+" : ""} ${today[i].price.toLocaleString()}</p></li>
        `;
 
 
@@ -37,7 +37,7 @@ fetch("../reference/bank.json").then(function (response) {
     for (let i = 0; i < yesterday.length; i++) {
       yesterdayHistory += `<li class="container">
       <p class="recent__list__description"> ${yesterday[i].history}</p>
-      <p class="recent__list__amount ${yesterday[i].income == "in" ? "red" : ""}"> ${yesterday[i].income == "in" ? "+" : ""} ${yesterday[i].price}</p></li>
+      <p class="recent__list__amount ${yesterday[i].income == "in" ? "red" : ""}"> ${yesterday[i].income == "in" ? "+" : ""} ${yesterday[i].price.toLocaleString()}</p></li>
        `;
 
     }
