@@ -31,7 +31,6 @@ wrap.addEventListener("mousemove", (e) => {
     usageHistory.style.transform = "translateY(-" + movePoint + "px)";
   }
 
-  console.log(currentY, " , ", e.clientY, "translateY(" + movePoint + "px)")
 })
 
 //마우스 누르기
@@ -43,7 +42,7 @@ target.addEventListener("mousedown", (e) => {
 
 //마우스 떼기
 const setTopTarget = (data) => {
-  if (data <= -99) {
+  if (data <= -125) {
     console.log("바텀에 고정해야함!");
     usageHistory.dataset.value = "bottom";
     usageHistory.style.transform = "translateY(0px)";
@@ -57,7 +56,7 @@ const setTopTarget = (data) => {
 
 const setBottomTarget = (data) => {
   console.log("data : ", data);
-  if (data <= 353) {
+  if (data <= 50) {
     console.log("바텀에 고정해야함!");
     usageHistory.dataset.value = "bottom";
     usageHistory.style.transform = "translateY(0px)";
@@ -70,12 +69,14 @@ const setBottomTarget = (data) => {
 }
 
 const mouseUpFunc = (e) => {
-  mouseClickSpan.innerText = "마우스 뗐음!";
+
   if (usageHistory.dataset.value == "top") {
     setTopTarget(currentY - e.clientY);
   } else {
     setBottomTarget(currentY - e.clientY);
   }
+  drageable = false;
+  console.log(drageable)
 }
 
 document.body.addEventListener("mouseup", mouseUpFunc);

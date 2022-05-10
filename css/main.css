@@ -1,5 +1,6 @@
 body {
   background-color: #ddd;
+
 }
 
 button {
@@ -249,11 +250,14 @@ a {
 
 .account__history .recent .recent__list__description {
   font-size: 18px;
+}
+
+.account__history .recent .recent__list__amount.red {
+  font-size: 18px;
+  color: #FF5F00;
 
 }
 
 .account__history .recent .recent__list .container :last-child {
   border-bottom: none;
 }
-
-.account__history .recent__list__title {}
