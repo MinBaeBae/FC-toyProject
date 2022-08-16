@@ -175,47 +175,58 @@ a {
   background-color: #c4c4c4;
 }
 
-.account__history .save__list {
+.account__history .swiper {
+  overflow: hidden;
+}
+
+.account__history .save-list {
   width: 308px;
   margin: 0px auto 25px;
   padding-top: 25px;
-  overflow: hidden;
-}
-
-
-.account__history .save__list ul {
-  overflow: hidden;
-  width: 200%;
 
 }
 
-.account__history .save__list ul li {
-  background-color: #ccc;
-  margin-right: 18px;
-  float: left;
+.account__history .save-item {
   width: 162px;
   height: 47px;
   border-radius: 6px;
-  overflow: hidden;
+  padding: 5px 24px 7px 13px;
+  box-sizing: border-box;
+  margin-right: 13px;
 }
 
-.account__history .save__list ul li div {
-  background-color: #FF5F00;
-  height: 100%;
-  width: 70%;
-  padding-left: 10px;
-  padding-top: 5px;
-}
-
-.account__history .save__list ul li:nth-child(2) div {
-  background-color: #FEB700;
-}
-
-.account__history .save__list ul li div p {
-  font-size: 14px;
-  color: #fff;
+.account__history .save-item p {
+  color: white;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 18px;
+}
 
+.account__history .save-list .first:nth-child(1) {
+  background: linear-gradient(90deg,
+      rgba(255, 95, 0, 1) 62%,
+      rgba(218, 218, 218, 1) 62%);
+}
+
+.account__history .save-list .first:nth-child(2) {
+  background: linear-gradient(90deg, #feb700 87%, rgba(218, 218, 218, 1) 87%);
+}
+
+.account__history .save-list .second:nth-child(1) {
+  background: linear-gradient(90deg, #55acee 92%, rgba(218, 218, 218, 1) 92%);
+}
+
+.account__history .save-list .second:nth-child(2) {
+  background: linear-gradient(90deg, #005f59 56%, rgba(218, 218, 218, 1) 56%);
+}
+
+.account__history .save-list .third:nth-child(1) {
+  background: linear-gradient(90deg, #0a73c3 92%, rgba(218, 218, 218, 1) 92%);
+}
+
+.account__history .save-list .third:nth-child(2) {
+  background: linear-gradient(90deg, #eeba00 56%, rgba(218, 218, 218, 1) 56%);
 }
 
 /* .account__history .save__list ul li div p.save__title {}

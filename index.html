@@ -1,123 +1,156 @@
 <!DOCTYPE html>
 <html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>First Toy Project 2022</title>
 
-  <title>First Toy Project 2022</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/nav.css" />
 
+		<!-- SWIPER -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="./js/main.js"></script>
+	</head>
 
+	<body>
+		<div class="wrap">
+			<!-- IPHONE IMAGE HEADER -->
+			<img src="./assets/images/iphone top.png" alt="fakeHeader" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/nav.css">
+			<!-- HEADER -->
 
+			<header>
+				<div class="user">
+					<a href="/" class="user__logo">
+						<img
+							class="user__img"
+							src="https://i.pinimg.com/564x/c1/5f/c8/c15fc81285d790bee139b7c302915d70.jpg"
+							alt="user1"
+						/>
+					</a>
+					<h3>생활비</h3>
+					<ul class="utility">
+						<li>
+							<a href="/" class="utility__logo">
+								<img src="./assets/images/horizontal_line.svg" alt="user1"
+							/></a>
+						</li>
+						<li>
+							<a href="/" class="utility__logo">
+								<img src="./assets/images/search.svg" alt="user1"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</header>
 
-  <!-- SWIPER -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js"></script>
-</head>
+			<!-- ACCOUNT STATUS -->
+			<div class="account__status">
+				<ul class="account__info">
+					<li>
+						<strong>1-800-273-8255</strong
+						><a href="/" class="account__transfer">이체</a>
+					</li>
+					<li class="account__balance">
+						<h2>1,240,000원</h2>
+					</li>
+					<li class="account__bar">
+						<div class="account__bar__grey">
+							<div class="account__bar__yellow">
+								<input type="image" src="./assets/images/skinnybutton.svg" />
+							</div>
+						</div>
 
-<body>
-  <div class="wrap">
+						<a href="manage.html" class="account__bar__icon">
+							<img src="./assets/images/barchart.svg" alt="barchart" />
+						</a>
+					</li>
+					<li class="account__duedate">2일동안 210,000원 남음</li>
+				</ul>
+				<div class="account__getrich">
+					<a href="/">비트코인 떡상 가즈아!!</a>
+				</div>
+			</div>
 
-    <!-- IPHONE IMAGE HEADER -->
-    <img src="./assets/images/iphone top.png" alt="fakeHeader">
+			<!-- ACCOUNT HISTORY -->
+			<section>
+				<div class="account__history" data-value="bottom">
+					<div class="scroll">
+						<button id="scrollTarget">
+							<hr />
+						</button>
+					</div>
 
-    <!-- HEADER -->
+					<div class="swiper mySwiper">
+						<ul class="swiper-wrapper save-list">
+							<li class="swiper-slide save-item first">
+								<p>여행가자!</p>
+								<p>842,200원</p>
+							</li>
+							<li class="swiper-slide save-item first">
+								<p>냉장고 사기</p>
+								<p>1,210,000원</p>
+							</li>
+							<li class="swiper-slide plus-saving">
+								<img src="./assets/images/plus.png" alt="+" />
+								<p>저금통 만들기</p>
+							</li>
+						</ul>
+					</div>
+					<ul class="recent">
+						<div class="recent__list__title recent__list__today">오늘</div>
+						<div class="recent__list__title recent__list__yesterday">어제</div>
+						<!-- <div class="recent__list__title recent__list__before">이전</div> -->
+					</ul>
+				</div>
+			</section>
 
-    <header>
-      <div class="user">
-        <a href="/" class="user__logo">
-          <img src="./assets/images/user1.svg" alt="user1">
-        </a>
-        <h3>생활비</h3>
-        <ul class="utility">
-          <li><a href="/" class="utility__logo">
-              <img src="./assets/images/horizontal_line.svg" alt="user1"></a></li>
-          <li><a href="/" class="utility__logo">
-              <img src="./assets/images/search.svg" alt="user1"></a></li>
-        </ul>
-      </div>
-    </header>
-
-    <!-- ACCOUNT STATUS -->
-    <div class="account__status">
-      <ul class="account__info">
-        <li><strong>1-800-273-8255</strong><a href="/" class="account__transfer">이체</a></li>
-        <li class="account__balance">
-          <h2>1,240,000원</h2>
-        </li>
-        <li class="account__bar">
-          <div class="account__bar__grey">
-            <div class="account__bar__yellow"><input type="image" src="./assets/images/skinnybutton.svg"></div>
-          </div>
-
-          <a href="manage.html" class="account__bar__icon">
-            <img src="./assets/images/barchart.svg" alt="barchart">
-          </a>
-        </li>
-        <li class="account__duedate">2일동안 210,000원 남음</li>
-      </ul>
-      <div class="account__getrich">
-        <a href="/">비트코인 떡상 가즈아!!</a>
-      </div>
-    </div>
-
-    <!-- ACCOUNT HISTORY -->
-    <section>
-      <div class="account__history" data-value="bottom">
-        <div class="scroll">
-          <button id="scrollTarget">
-            <hr>
-          </button>
-        </div>
-
-        <div class="save__list">
-          <ul>
-            <li>
-              <div>
-                <p class="save__title">여행가자!</p>
-                <p class="save__money">888,888원</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <p class="save__title">냉장고!</p>
-                <p class="save__money">444,444원</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <ul class="recent">
-          <div class="recent__list__title recent__list__today">오늘</div>
-          <div class="recent__list__title recent__list__yesterday">어제</div>
-          <!-- <div class="recent__list__title recent__list__before">이전</div> -->
-
-        </ul>
-      </div>
-    </section>
-
-    <!-- NAVIGATION BAR -->
-    <nav>
-      <ul class="nav__button">
-        <li><a href="/"><img src="./assets/images/home.svg" alt=""></a></li>
-        <li><a href="/"><img src="./assets/images/doubleaarow.svg" alt=""></a></li>
-        <li><a href="/"><img src="./assets/images/chat.svg" alt=""></a></li>
-        <li><a href="/"><img src="./assets/images/more.svg" alt=""></a></li>
-      </ul>
-    </nav>
-  </div>
-  <script src="./js/drag.js"></script>
-</body>
-
+			<!-- NAVIGATION BAR -->
+			<nav>
+				<ul class="nav__button">
+					<li>
+						<a href="/"><img src="./assets/images/home.svg" alt="" /></a>
+					</li>
+					<li>
+						<a href="./wire.html"
+							><img src="./assets/images/doubleaarow.svg" alt=""
+						/></a>
+					</li>
+					<li>
+						<a href="/"><img src="./assets/images/chat.svg" alt="" /></a>
+					</li>
+					<li>
+						<a href="/"><img src="./assets/images/more.svg" alt="" /></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<script src="./js/drag.js"></script>
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				slidesPerView: 2,
+			})
+			var swiper = new Swiper('.mainSwiper', {
+				slidesPerView: 1,
+			})
+		</script>
+	</body>
 </html>

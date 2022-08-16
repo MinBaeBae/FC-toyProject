@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="kor">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>First Toy Project 2022</title>
 
-  <title>First Toy Project 2022</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/manage.css" />
 
+		<!-- SWIPER -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	</head>
 
+	<body>
+		<div class="wrap--white">
+			<!-- IPHONE IMAGE HEADER -->
+			<img src="./assets/images/iphone top.png" alt="fakeHeader" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/manage.css">
+			<!-- HEADER -->
 
-  <!-- SWIPER -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+			<header>
+				<div class="close__tab"><a href="./index.html">닫기</a></div>
+				<div class="expanse">
+					<h3>지출 관리</h3>
+				</div>
+			</header>
 
-</head>
+			<!-- 기준금액 설정 섹션 -->
+			<div class="management__standard">
+				<div class="setting">
+					<strong>기준금액 설정</strong>
+					<span class="management__standard__max">1,110,000원</span>
+				</div>
+				<div>
+					<ul class="account__info">
+						<li class="account__bar">
+							<div class="account__bar__grey">
+								<div class="account__bar__yellow">
+									<input type="image" src="./assets/images/skinnybutton.svg" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-<body>
-  <div class="wrap--white">
+			<!-- DAILY REPORT -->
+			<div class="daily__report">
+				<strong>일간 리포트</strong>
+				<div class="daily__report__chart">
+					<img src="./assets/images/yeargraph.svg" alt="yeargraph" />
+				</div>
+			</div>
 
-    <!-- IPHONE IMAGE HEADER -->
-    <img src="./assets/images/iphone top.png" alt="fakeHeader">
+			<!-- EXPANSE PATTERN -->
+			<div class="expanse__pattern">
+				<strong>6월 지출 패턴</strong>
+				<div class="expanse__pattern__circle">
+					<img src="./assets/images/junecircle.svg" alt="june" />
+				</div>
+			</div>
 
-    <!-- HEADER -->
-
-    <header>
-      <div class="close__tab"><a href="./index.html">닫기</a></div>
-      <div class=expanse>
-        <h3>지출 관리</h3>
-      </div>
-    </header>
-
-    <!-- 기준금액 설정 섹션 -->
-    <div class="management__standard">
-      <div class="setting">
-        <strong>기준금액 설정</strong>
-        <span class="management__standard__max">1,110,000원</span>
-      </div>
-      <div>
-        <ul class="account__info">
-          <li class="account__bar">
-            <div class="account__bar__grey">
-              <div class="account__bar__yellow"><input type="image" src="./assets/images/skinnybutton.svg"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- DAILY REPORT -->
-    <div class="daily__report">
-      <strong>일간 리포트</strong>
-      <div class="daily__report__chart">
-        <img src="./assets/images/yeargraph.svg" alt="yeargraph">
-      </div>
-    </div>
-
-    <!-- EXPANSE PATTERN -->
-    <div class="expanse__pattern">
-      <strong>6월 지출 패턴</strong>
-      <div class="expanse__pattern__circle">
-        <img src="./assets/images/junecircle.svg" alt="june">
-      </div>
-    </div>
-
-
-    <!-- NAVIGATION BAR -->
-    <nav>
-      <ul class="nav__button">
-        <li><a href="/"><img src="./assets/images/home.svg" alt=""></a></li>
-        <li><a href="/"><img src="./assets/images/doubleaarow.svg" alt=""></a></li>
-        <li><a href="/"><img src="./assets/images/chat.svg" alt=""></a></li>
-        <li><a href="/"><img src="./assets/images/more.svg" alt=""></a></li>
-      </ul>
-    </nav>
-  </div>
-</body>
-
+			<!-- NAVIGATION BAR -->
+			<nav>
+				<ul class="nav__button">
+					<li>
+						<a href="/"><img src="./assets/images/home.svg" alt="" /></a>
+					</li>
+					<li>
+						<a href="/wire.html"
+							><img src="./assets/images/doubleaarow.svg" alt=""
+						/></a>
+					</li>
+					<li>
+						<a href="/"><img src="./assets/images/chat.svg" alt="" /></a>
+					</li>
+					<li>
+						<a href="/"><img src="./assets/images/more.svg" alt="" /></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</body>
 </html>

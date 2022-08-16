@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/wire.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+		<script defer src="./js/wire.js"></script>
+	</head>
+	<body>
+		<div class="send-page">
+			<!-- 상단바 -->
+			<div class="status-bar"></div>
+			<!-- header -->
+			<header class="page-header">
+				<a href="./index.html">취소</a>
+				<h3>이체</h3>
+			</header>
+			<div class="change-box">
+				<!-- 메인 1 -->
+				<main class="accout-list-page">
+					<button class="account-btn">직접입력</button>
+					<ul class="account-list">
+						<li class="account-item">
+							<div class="account-wrapper">
+								<img
+									class="user-img"
+									src="https://i.pinimg.com/564x/ae/b5/68/aeb56809e7f64a0fcf04a8a2ce98c788.jpg"
+								/>
+								<div class="user-info">
+									<p class="name">Harry</p>
+									<p class="account">기업 013-120895-01-017</p>
+								</div>
+							</div>
+							<img class="star" src="./assets/images/star.png" alt="star" />
+						</li>
+						<li class="account-item">
+							<div class="account-wrapper">
+								<img
+									class="user-img"
+									src="https://i.pinimg.com/236x/a5/89/77/a58977c5effe8a9e0969a4b61fda86be.jpg"
+								/>
+								<div class="user-info">
+									<p class="name">Hermione</p>
+									<p class="account">카카오 5882-7979-999</p>
+								</div>
+							</div>
+							<img class="star" src="./assets/images/star.png" alt="star" />
+						</li>
+						<li class="account-item">
+							<div class="account-wrapper">
+								<img
+									class="user-img"
+									src="https://i.pinimg.com/236x/30/aa/f7/30aaf7b79722b266c9868391b0547973.jpg"
+								/>
+								<div class="user-info">
+									<p class="name">Hedwig</p>
+									<p class="account">국민 1004-114-1588</p>
+								</div>
+							</div>
+							<img class="star" src="./assets/images/star.png" alt="star" />
+						</li>
+						<li class="account-item">
+							<div class="account-wrapper">
+								<img
+									class="user-img"
+									src="https://i.pinimg.com/236x/4a/eb/d4/4aebd427f8836155014d82e397fdb59f.jpg"
+								/>
+								<div class="user-info">
+									<p class="name">Free Doby</p>
+									<p class="account">하나 5959-0720-555</p>
+								</div>
+							</div>
+							<img class="star" src="./assets/images/star.png" alt="star" />
+						</li>
+						<li class="account-item">
+							<div class="account-wrapper">
+								<img
+									class="user-img"
+									src="https://i.pinimg.com/736x/a9/b5/e9/a9b5e90b43f0d3dc0f806f5d9668f09c.jpg"
+								/>
+								<div class="user-info">
+									<p class="name">Ron</p>
+									<p class="account">농협 1588-1789-777777</p>
+								</div>
+							</div>
+							<img class="star" src="./assets/images/star.png" alt="star" />
+						</li>
+						<li class="account-item">
+							<div class="account-wrapper">
+								<img
+									class="user-img"
+									src="https://i.pinimg.com/564x/8e/b2/74/8eb274e558ed6d11da59d16691a52c5a.jpg"
+								/>
+								<div class="user-info">
+									<p class="name">Dumbledore</p>
+									<p class="account">현대 777-777-777</p>
+								</div>
+							</div>
+							<img class="star" src="./assets/images/star.png" alt="star" />
+						</li>
+					</ul>
+				</main>
+				<!-- 메인2 -->
+				<main class="send-money">
+					<section class="user-wrapper">
+						<img
+							class="user-img"
+							src="https://i.pinimg.com/564x/ae/b5/68/aeb56809e7f64a0fcf04a8a2ce98c788.jpg"
+						/>
+						<div class="user-info">
+							<p class="name">Harry</p>
+							<p class="account">기업 013-120895-01-017</p>
+						</div>
+					</section>
+					<section>
+						<div class="input-wrapper">
+							<div class="amount"></div>
+							<p>원</p>
+						</div>
+						<div class="account-info">생활비 계좌 : 1,240,000 에서</div>
+						<div class="num-pad">
+							<div class="btn" onclick="addNum('1')">1</div>
+							<div class="btn" onclick="addNum('2')">2</div>
+							<div class="btn" onclick="addNum('3')">3</div>
+							<div class="btn" onclick="addNum('4')">4</div>
+							<div class="btn" onclick="addNum('5')">5</div>
+							<div class="btn" onclick="addNum('6')">6</div>
+							<div class="btn" onclick="addNum('7')">7</div>
+							<div class="btn" onclick="addNum('8')">8</div>
+							<div class="btn" onclick="addNum('9')">9</div>
+							<div class="btn" onclick="addNum('0')">0</div>
+							<div class="btn" onclick="addNum('00')">00</div>
+							<div class="btn arrow" onclick="delNum()">←</div>
+						</div>
+						<button class="next-btn">다음</button>
+					</section>
+				</main>
+				<!-- 메인 3 -->
+				<main class="complete-send">
+					<div class="complete-message">
+						<span>스누피</span> 님께 <br />
+						<span class="total-send-money">38000</span> 원이 <br />
+						이체되었습니다.
+					</div>
+				</main>
+			</div>
+	<!-- NAVIGATION BAR -->
+			<nav>
+				<ul class="nav__button">
+					<li>
+						<a href="/"><img src="./assets/images/home.svg" alt="" /></a>
+					</li>
+					<li>
+						<a href="./wire.html"
+							><img src="./assets/images/doubleaarow.svg" alt=""
+						/></a>
+					</li>
+					<li>
+						<a href="/"><img src="./assets/images/chat.svg" alt="" /></a>
+					</li>
+					<li>
+						<a href="/"><img src="./assets/images/more.svg" alt="" /></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+	</body>
+</html>
