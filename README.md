@@ -2,9 +2,9 @@
 
 ## Purpose
 
-```
+
 Attempt to create an banking app, using Vanilla based on the design provided through Figma (https://www.figma.com/file/MfbHmJv7zDrXzKztwkVYMq?embed_host=notion&kind=&node-id=2112%3A84&viewer=1).
-```
+
 
 - Create Mark-Up to accurately depict the design
 - Figure out how to utilize json data
@@ -27,7 +27,7 @@ Attempt to create an banking app, using Vanilla based on the design provided thr
 - Used only Javascript to drag a box to hold the position at the top and bottom.
   <br/>
   <br/>
-  ![list](https://memory-develo.tistory.com/102)
+https://memory-develo.tistory.com/102
 
 > ### 3. Swiper
 
